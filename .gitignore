@@ -1,0 +1,4 @@
+__pycache__/
+*.docx
+img/
+build_lab8.py

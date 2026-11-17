@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Патон Вісті — новинний портал</title>
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--ink:#1b1f27;--muted:#5d6676;--accent:#c0392b;--line:#e1e4ea}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{background:#1b1f27;color:#fff}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;flex-wrap:wrap;gap:10px}
+.logo{font-size:30px;font-weight:700;letter-spacing:.5px}
+.logo span{color:var(--accent)}
+nav a{color:#cfd4dd;text-decoration:none;margin-left:18px;font-family:Arial,sans-serif;font-size:15px}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(120deg,#c0392b,#7b241c);color:#fff;padding:46px 0}
+.hero h1{margin:0 0 10px;font-size:36px}
+.hero p{margin:0;max-width:680px;font-size:18px;opacity:.95}
+.ticker{background:var(--accent);color:#fff;font-family:Arial,sans-serif;font-size:14px;padding:8px 0}
+main{padding:34px 0}
+h2{font-size:24px;border-left:5px solid var(--accent);padding-left:12px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px;margin-bottom:34px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px}
+.tag{display:inline-block;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:6px}
+.card h3{margin:0 0 8px;font-size:20px}
+.card p{margin:0 0 10px;color:var(--muted)}
+.card time{font-family:Arial,sans-serif;font-size:13px;color:var(--muted)}
+footer{background:#1b1f27;color:#cfd4dd;padding:24px 0;font-family:Arial,sans-serif;font-size:14px}
+footer strong{color:#fff}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <div class="logo">Патон <span>Вісті</span></div>
+    <nav><a href="#world">Україна і світ</a><a href="#tech">Технології</a><a href="#sport">Спорт</a><a href="#about">Про сайт</a></nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Патон Вісті — новинний портал</h1>
+    <p>Щоденна добірка перевірених новин про події в Україні та світі, розвиток технологій і спортивні змагання. Навчальний вебсайт, розгорнутий за допомогою Docker, Nginx і платформи Render.</p>
+  </div>
+</section>
+<div class="ticker"><div class="wrap">Остання хвилина: сайт автоматично оновлюється після кожного коміту до GitHub-репозиторію.</div></div>
+
+<main class="wrap">
+  <h2 id="world">Україна і світ</h2>
+  <div class="grid">
+    <article class="card"><span class="tag">Суспільство</span><h3>Освітні програми для студентів розширюють</h3><p>Фахові коледжі запроваджують нові курси з вебтехнологій та кібербезпеки для здобувачів освіти.</p><time>17 листопада 2026</time></article>
+    <article class="card"><span class="tag">Економіка</span><h3>Український ІТ-сектор демонструє зростання</h3><p>Експорт ІТ-послуг залишається однією з ключових статей надходжень до економіки країни.</p><time>16 листопада 2026</time></article>
+    <article class="card"><span class="tag">Світ</span><h3>Міжнародні форуми з цифрової безпеки</h3><p>Експерти обговорюють захист даних та стандарти безпечного розгортання вебсервісів.</p><time>15 листопада 2026</time></article>
+  </div>
+
+  <h2 id="tech">Технології</h2>
+  <div class="grid">
+    <article class="card"><span class="tag">DevOps</span><h3>Що таке CI/CD і навіщо воно потрібне</h3><p>Безперервна інтеграція та розгортання скорочують час від написання коду до його появи у користувачів.</p><time>17 листопада 2026</time></article>
+    <article class="card"><span class="tag">Контейнери</span><h3>Docker став стандартом пакування застосунків</h3><p>Контейнеризація забезпечує однакове середовище на комп’ютері розробника та на сервері.</p><time>14 листопада 2026</time></article>
+    <article class="card"><span class="tag">Хмара</span><h3>Безкоштовні хмарні платформи для навчання</h3><p>Сервіси на кшталт Render дозволяють розгорнути вебсайт безпосередньо з GitHub-репозиторію.</p><time>13 листопада 2026</time></article>
+  </div>
+
+  <h2 id="sport">Спорт</h2>
+  <div class="grid">
+    <article class="card"><span class="tag">Футбол</span><h3>Збірна готується до наступного матчу</h3><p>Тренерський штаб оголосив склад команди на найближчу гру відбіркового турніру.</p><time>16 листопада 2026</time></article>
+    <article class="card"><span class="tag">Легка атлетика</span><h3>Студентські змагання зібрали рекордну кількість учасників</h3><p>У турнірі взяли участь представники понад тридцяти навчальних закладів.</p><time>12 листопада 2026</time></article>
+  </div>
+</main>
+
+<footer id="about">
+  <div class="wrap">
+    <p><strong>Патон Вісті</strong> — навчальний новинний портал (лабораторна робота №8, варіант 22).</p>
+    <p>Студент: <strong>Тіменцев Максим</strong> · Група: <strong>КМП-23-3/9</strong></p>
+  </div>
+</footer>
+</body>
+</html>
